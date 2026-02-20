@@ -14,8 +14,8 @@ COPY handler.py /app/handler.py
 
 # Default environment (override in RunPod template)
 ENV MODEL_NAME="Qwen/Qwen3-32B-AWQ"
-ENV MAX_MODEL_LEN=32768
-ENV GPU_MEMORY_UTILIZATION=0.90
+ENV MAX_MODEL_LEN=4096
+ENV GPU_MEMORY_UTILIZATION=0.95
 ENV TENSOR_PARALLEL_SIZE=1
 ENV QUANTIZATION=awq
 # Set HF cache to network volume if mounted
