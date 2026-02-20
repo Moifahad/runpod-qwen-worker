@@ -9,7 +9,7 @@ from vllm import LLM, SamplingParams
 from vllm.sampling_params import GuidedDecodingParams
 
 # ─── Configuration ───────────────────────────────────────────────
-MODEL_NAME = os.environ.get("MODEL_NAME", "Qwen/Qwen3-72B-AWQ")
+MODEL_NAME = os.environ.get("MODEL_NAME", "Qwen/Qwen3-32B-AWQ")
 MAX_MODEL_LEN = int(os.environ.get("MAX_MODEL_LEN", "32768"))
 GPU_MEMORY_UTILIZATION = float(os.environ.get("GPU_MEMORY_UTILIZATION", "0.90"))
 TENSOR_PARALLEL_SIZE = int(os.environ.get("TENSOR_PARALLEL_SIZE", "1"))

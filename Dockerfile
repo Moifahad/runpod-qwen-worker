@@ -13,7 +13,7 @@ RUN pip install --no-cache-dir \
 COPY handler.py /app/handler.py
 
 # Default environment (override in RunPod template)
-ENV MODEL_NAME="Qwen/Qwen3-72B-AWQ"
+ENV MODEL_NAME="Qwen/Qwen3-32B-AWQ"
 ENV MAX_MODEL_LEN=32768
 ENV GPU_MEMORY_UTILIZATION=0.90
 ENV TENSOR_PARALLEL_SIZE=1
