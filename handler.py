@@ -6,7 +6,6 @@ OpenAI-compatible chat/completion endpoint.
 import os
 import runpod
 from vllm import LLM, SamplingParams
-from vllm.sampling_params import GuidedDecodingParams
 
 # ─── Configuration ───────────────────────────────────────────────
 MODEL_NAME = os.environ.get("MODEL_NAME", "Qwen/Qwen3-32B-AWQ")
